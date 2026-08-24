@@ -9,7 +9,7 @@ on:
 
 jobs:
   webhook-test:
-    name: Webhook Test Job Sample 3
+    name: Webhook Test Job Sample 4
     runs-on: ubuntu-latest
 
     steps:

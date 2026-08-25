@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Start Test
-        run: |
+        runn: |
           echo "GitHub Actions webhook test started"
           echo "Runner: $RUNNER_NAME"
 

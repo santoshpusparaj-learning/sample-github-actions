@@ -14,7 +14,8 @@ jobs:
 
     steps:
       - name: Start Test
-        runn: |
+        invalid-property : test
+        run: |
           echo "GitHub Actions webhook test started"
           echo "Runner: $RUNNER_NAME"
 

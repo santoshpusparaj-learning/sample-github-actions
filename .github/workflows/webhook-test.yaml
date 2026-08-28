@@ -1,29 +1,15 @@
-name: GitHub Webhook Test
+name: VMSS Test
 
 on:
-  push:
-    branches:
-      - main
-
   workflow_dispatch:
 
 jobs:
-  webhook-test:
-    name: Webhook Test Job Sample 4
-    runs-on: ubuntu-latest
+  test:
+    runs-on: [self-hosted, azure-vmss]
 
     steps:
-      - name: Start Test
-        invalid-property : test
+      - name: Test runner
         run: |
-          echo "GitHub Actions webhook test started"
-          echo "Runner: $RUNNER_NAME"
-
-      - name: Wait for webhook events
-        run: |
-          echo "Sleeping for 20 seconds..."
-          sleep 20
-
-      - name: Complete Test
-        run: |
-          echo "GitHub Actions webhook test completed"
+          echo "VMSS runner started"
+          hostname
+          sleep 30

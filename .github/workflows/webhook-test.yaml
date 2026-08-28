@@ -12,4 +12,4 @@ jobs:
         run: |
           echo "VMSS runner started"
           hostname
-          sleep 30
+          sleep 50

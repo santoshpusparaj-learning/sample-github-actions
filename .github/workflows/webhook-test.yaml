@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Test runner
         run: |
-          echo "VMSS runner started"
+          echo "VMSS runner started m"
           hostname
           sleep 50
